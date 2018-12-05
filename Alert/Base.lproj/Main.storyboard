@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xP2-A5-UqP">
+                                <rect key="frame" x="10" y="60" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="beR-uq-W4K"/>
+                                </constraints>
+                                <state key="normal" title="Basic Alert"/>
+                                <connections>
+                                    <action selector="btnShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uH-NE-WKa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gt-tX-ARe">
+                                <rect key="frame" x="10" y="100" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rNx-PF-pXS"/>
+                                </constraints>
+                                <state key="normal" title="Multi Button Alert"/>
+                                <connections>
+                                    <action selector="btnMultiAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMr-vN-zGI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H97-YU-a9W">
+                                <rect key="frame" x="10" y="140" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rkg-GS-vyc"/>
+                                </constraints>
+                                <state key="normal" title="Action Sheet"/>
+                                <connections>
+                                    <action selector="btnActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acP-w8-d7D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONq-L4-YPC">
+                                <rect key="frame" x="10" y="180" width="355" height="30"/>
+                                <state key="normal" title="Login Form"/>
+                                <connections>
+                                    <action selector="btnLoginForm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BkB-Cz-pqm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xP2-A5-UqP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="2ta-HI-OLk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9gt-tX-ARe" secondAttribute="trailing" constant="10" id="31a-D9-2qn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xP2-A5-UqP" secondAttribute="trailing" constant="10" id="AAX-QQ-iYW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ONq-L4-YPC" secondAttribute="trailing" constant="10" id="B2i-aT-tyo"/>
+                            <constraint firstItem="H97-YU-a9W" firstAttribute="top" secondItem="9gt-tX-ARe" secondAttribute="bottom" constant="10" id="JtH-j3-eMa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H97-YU-a9W" secondAttribute="trailing" constant="10" id="Ske-aw-NEx"/>
+                            <constraint firstItem="9gt-tX-ARe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TKi-Wy-1Se"/>
+                            <constraint firstItem="ONq-L4-YPC" firstAttribute="top" secondItem="H97-YU-a9W" secondAttribute="bottom" constant="10" id="Yh5-a4-gh1"/>
+                            <constraint firstItem="9gt-tX-ARe" firstAttribute="top" secondItem="xP2-A5-UqP" secondAttribute="bottom" constant="10" id="Zhg-wy-g5k"/>
+                            <constraint firstItem="xP2-A5-UqP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="uGR-Fv-Nhn"/>
+                            <constraint firstItem="ONq-L4-YPC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="uok-Ce-ruI"/>
+                            <constraint firstItem="H97-YU-a9W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="v9y-ID-dCX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
